@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+.knockout {
+    position: relative;
+    
+    height: 100vh;
+    width: 100vw;
+    padding-top: 25vh;
+    padding-bottom: 25vh;
+    padding-left: .5em;
+    padding-right: .5em;
+    
+    background: url(https://image.shutterstock.com/z/stock-photo-beautiful-tropical-blue-lagoon-scenic-landscape-with-sea-bay-and-mountain-islands-el-nido-529528465.jpg);
+    
+    background-size: cover;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    line-height: 1em;
+    text-transform: uppercase;
+    font-size: 5em;
+    text-align: center;
+    color: white;
+    
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -moz-background-clip: text;
+    background-clip: text;
+    
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.knockout:before,
+.knockout:after {
+    content: '';
+}
+
+/* Background */
+.knockout:before {
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: inherit;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Text Background (black zone) */
+.knockout:after {
+    position: absolute;
+    z-index: -1;
+    top: 25vh;
+    right: 0em;
+    bottom: 25vh;
+    left: 0em;
+    background-color: rgba(0,0,0, .75);
+}
